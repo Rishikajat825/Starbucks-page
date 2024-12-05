@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+.parts{
+    border:none;
+    display: flex;
+    align-items: center;
+}
+
+.parts:first-child img{
+    margin-left: 40px;
+}
+ .parts:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.parts:last-child{
+    display: flex;
+    justify-content: end;
+}
+.parts ul{
+    display: flex;
+    align-items: center;
+}
+.parts ul li{
+    list-style: none;
+}
+.parts ul li a{
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+}
+.parts ul li a:first-child{
+    color: black;
+}
+.parts button:first-child{
+    margin-right: 40px;
+    height: 30px;
+    width: 80px;
+    color:
+    #046635;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.parts button:last-child{
+    margin-right: 40px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color:#046635 ;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.hero-section{
+    height: 100vh;
+    width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2 , 1fr);
+}
+.partition{
+    border: none;
+}
+.partition:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+.partition:first-child h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.partition:first-child p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+}
+.button{
+    display: flex;
+}
+.button button:first-child{
+    margin-top: 40px;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px #036735;
+    border: 3px solid black;
+    text-align: center;
+    color: #036735;
+    background-color:#ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button button:last-child{
+    margin-top: 40px;
+    height: 60px;
+    width: 200px;
+    color: #036735;
+    background-color:#ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+}
+.partition:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partition:nth-child(2) img{
+    width: 80%;
+}
+.partition:last-child{
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 60px;
+}
+.partition:last-child button img{
+    width: 80px;
+    margin-right: 40px;
+}
+.partition:last-child button{
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px #036735;
+    border: 3px solid black;
+    text-align: center;
+    color: #036735;
+    background-color:#ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width:480px) {
+    .parts:nth-child(2){
+        display: none;
+    }
+    .parts:first-child img{
+        margin-left:0;
+        width: 50vw;
+    }
+    .hero-section{
+        height: 100vh;
+        width: 100%;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(2 , 1fr);
+    }
+    .partition{
+        border: none;
+    }
+    .partition:first-child{
+        width: 100%;
+        flex-direction: column;
+    }
+    .partition:first-child h1{
+        font-size: 30px;
+    }
+    .partition:first-child p{
+        font-size: 16px;
+    }
+    .partition:nth-child(2) img{
+        display: none;
+    }
+    .button{
+        display: flex;
+        flex-direction: column;
+    }
+    .button button:last-child{
+        margin-left: 0;
+    }
+    .partition:last-child{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px;
+    }
+    .partition:last-child button{
+        height: 100px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 10px 10px #036735;
+        border: 3px solid black;
+        text-align: center;
+        color: #036735;
+        background-color:#ffffff;
+        font-size: 17px;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
